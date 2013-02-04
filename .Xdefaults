@@ -1,0 +1,68 @@
+
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    96
+Xft.antialias:              false
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+URxvt.loginShell:           false
+URxvt.saveLines:            50
+URxvt.internalBorder:       2
+URxvt.lineSpace:            0
+
+! Fonts
+URxvt.allow_bold:           true
+! URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-* 
+! URxvt*boldFont: -*-terminus bold-*-*-*-*-12-*-*-*-*-*-*-*
+
+
+
+! Fix font space
+! URxvt*letterSpace: -1 
+URxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Tomorrow Night Theme
+URxvt.foreground : #c5c8c6
+URxvt.background : #1d1f21
+URxvt.cursorColor : #aeafad
+
+! Black / Bright Black (White)
+URxvt.color0 : #1d1f21
+URxvt.color8 : #FFFFFF
+
+! Red / Bright Red
+URxvt.color1 : #cc6666
+URxvt.color9 : #cc6666
+
+! Green + Bright Green
+URxvt.color2 : #b5bd68
+URxvt.color10 : #b5bd68
+
+! Yellow (Orange) + Bright Yellow (Yellow)
+URxvt.color3 : #de935f
+URxvt.color11 : #f0c674
+
+! Blue + Bright Blue
+URxvt.color4 : #81a2be
+URxvt.color12 : #81a2be
+
+! Magenta (Purple) + Bright Magenta
+URxvt.color5 : #b294bb
+URxvt.color13 : #b294bb
+
+! Cyan (Aqua) + Bright Cyan
+URxvt.color6 : #81a2be
+URxvt.color14 : #81a2be
