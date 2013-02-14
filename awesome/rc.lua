@@ -43,7 +43,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
 -- beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
-beautiful.init("/home/leo/.config/awesome/themes/dust/theme.lua")
+beautiful.init("/home/david/.config/awesome/themes/dust/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "rxvt-unicode"
@@ -55,7 +55,7 @@ editor_cmd = terminal .. " -e " .. editor
 -- If you do not like this or do not have such a key,
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
-modkey = "Mod4"
+modkey = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
@@ -79,8 +79,11 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    -- Kana numbers
-    tags[s] = awful.tag({'一' ,'二','三', '四', '五'}, s, layouts[1])
+    --tags[s] = awful.tag({'' ,'','', '', ''}, s, layouts[1])
+    tags[s] = awful.tag({'' ,'','', '', ''}, s, layouts[1])
+    --tags[s] = awful.tag({'∙' ,'∶','∴', '∷', '⁙'}, s, layouts[1])
+    --tags[s] = awful.tag({'⚀' ,'⚁','⚂', '⚃', '⚄'}, s, layouts[1])
+    --tags[s] = awful.tag({'一' ,'二','三', '四', '五'}, s, layouts[1])
     -- tags[s] = awful.tag({'I','II','III','IV','V'}, s , layouts[1])
 end
 -- }}}
@@ -107,6 +110,17 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
+
+-- Initialize widgets
+--memwidget = awful.widget.progressbar()
+--memwidget:set_width(8)
+--memwidget:set_height(10)
+--memwidget:set_vertical(true)
+--memwidget:set_background_color("#494B4F")
+--memwidget:set_border_color(nil)
+--memwidget:set_color("#AECF96")
+--memwidget:set_gradient_colors({ "#AECF96", "#88A175", "#FF5656" })
+--vicious.register(memwidget, vicious.widgets.mem, "$1", 13)
 
 -- Create a systray
 mysystray = widget({ type = "systray" })

@@ -43,7 +43,7 @@ if awful.util.file_readable(config .. "/vain/init.lua") then
 end
 --}}}
 
-theme.font          = "Terminus 8"
+theme.font          = "Terminus 12"
 
 theme.bg_normal     = "#1d1f21"
 theme.bg_focus      = "#444444"
