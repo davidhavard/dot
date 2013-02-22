@@ -22,7 +22,7 @@ extra_newline no
 own_window yes
 own_window_class Conky
 own_window_type desktop
-own_window_transparent no
+own_window_transparent yes
 own_window_hints ondecorated,below,sticky,skip_task bar,skip_pager
 stippled_borders 0
 update_interval 1.0
@@ -38,5 +38,5 @@ color3 444444
 
 TEXT
 ${color1}eth0 [${color3}${addr eth0}${color}]: ${color1}Up:${color} ${upspeed eth0} ${color1} - Down:${color} ${downspeed eth0}     \
-${color1}CPU: ${color} ${cpu}% ${cpubar cpu0 5,50} ${color2}CPU1: ${cpubar cpu1 5,50} CPU2: ${cpubar cpu2 5,50} ${color}| \
+${color1}CPU: ${color} ${cpu}% ${cpubar cpu0 5,50} | \
 ${color1}RAM:${color} ${memperc}% ${membar 5,50}
