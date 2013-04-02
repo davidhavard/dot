@@ -55,9 +55,9 @@ theme.fg_focus      = "#eeffff"
 theme.fg_urgent     = "#ffeeee"
 theme.fg_minimize   = "#ffffff"
 
-theme.border_width  = 0
+theme.border_width  = 1
 theme.border_normal = "#000000"
-theme.border_focus  = "#000000"
+theme.border_focus  = "#999999"
 theme.border_marked = "#000000"
 
 theme.bg_widget        = "#333333"

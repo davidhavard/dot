@@ -23,8 +23,6 @@ URxvt.allow_bold:           true
 ! URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-* 
 ! URxvt*boldFont: -*-terminus bold-*-*-*-*-12-*-*-*-*-*-*-*
 
-
-
 ! Fix font space
 ! URxvt*letterSpace: -1 
 URxvt*font:        -xos4-terminus-medium-*-*-*-16-*-*-*-*-*-*-*

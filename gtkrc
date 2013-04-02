@@ -1,2 +1,9 @@
-gtk-gnome-theme = "Clearlooks"
-gtk-icon-theme-name = "Faenza"
+gtk-theme-name = "Esco"
+#gtk-icon-theme-name = "Faenza"
+style "font"
+{
+     font_name = "Terminus 12"
+}
+
+widget_class "*" style "font"
+gtk-font-name = "Terminus 12"
