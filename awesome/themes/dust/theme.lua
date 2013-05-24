@@ -45,7 +45,7 @@ end
 
 theme.font          = "Terminus 12"
 
-theme.bg_normal     = "#1d1f21"
+theme.bg_normal     = "#000000"
 theme.bg_focus      = "#444444"
 theme.bg_urgent     = "#cd7171"
 theme.bg_minimize   = "#444444"
@@ -57,7 +57,7 @@ theme.fg_minimize   = "#ffffff"
 
 theme.border_width  = 1
 theme.border_normal = "#000000"
-theme.border_focus  = "#999999"
+theme.border_focus  = "#0EAB0E"
 theme.border_marked = "#000000"
 
 theme.bg_widget        = "#333333"

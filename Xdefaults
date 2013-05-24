@@ -9,6 +9,8 @@ Xft.rgba:                   rgb
 Xft.hinting:                true
 Xft.hintstyle:              hintslight
 
+Gvim.background: [80]#000000
+
 URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          false
@@ -34,7 +36,7 @@ URxvt.scrollBar:            false
 
 ! Tomorrow Night Theme
 URxvt.foreground : #c5c8c6
-URxvt.background : #1d1f21
+URxvt.background : [80]#000000
 URxvt.cursorColor : #aeafad
 
 ! Black / Bright Black (White)
@@ -64,3 +66,9 @@ URxvt.color13 : #b294bb
 ! Cyan (Aqua) + Bright Cyan
 URxvt.color6 : #81a2be
 URxvt.color14 : #81a2be
+
+! Clickable URLs:
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
+
