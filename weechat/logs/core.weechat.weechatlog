@@ -1,0 +1,124 @@
+2013-06-04 10:39:01		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2013-06-04 10:39:12	=!=	irc: command "nick" must be executed on irc buffer (server or channel)
+2013-06-04 10:40:01	=!=	irc: command "join" must be executed on irc buffer (server or channel)
+2013-06-04 10:40:53		[core]
+2013-06-04 10:40:53		  away    buffer  command debug   help    input   layout  mute    proxy   reload  save    unset   uptime  wait   
+2013-06-04 10:40:53		  bar     color   cursor  filter  history key     mouse   plugin  quit    repeat  set     upgrade version window 
+2013-06-04 10:40:53		[alias]
+2013-06-04 10:40:53		  AAWAY   AME     ANICK   C       CL      EXIT    J       KB      M       N       REDRAW  SIGNOFF UB      unalias W       WI      WW     
+2013-06-04 10:40:53		  alias   AMSG    BYE     CHAT    CLOSE   IG      K       LEAVE   MUB     Q       SAY     T       UMODE   V       WC      WII    
+2013-06-04 10:40:53		[logger]
+2013-06-04 10:40:53		  logger
+2013-06-04 10:40:53		[rmodifier]
+2013-06-04 10:40:53		  rmodifier
+2013-06-04 10:40:53		[relay]
+2013-06-04 10:40:53		  relay
+2013-06-04 10:40:53		[perl]
+2013-06-04 10:40:53		  perl
+2013-06-04 10:40:53		[tcl]
+2013-06-04 10:40:53		  tcl
+2013-06-04 10:40:53		[ruby]
+2013-06-04 10:40:53		  ruby
+2013-06-04 10:40:53		[lua]
+2013-06-04 10:40:53		  lua
+2013-06-04 10:40:53		[guile]
+2013-06-04 10:40:53		  guile
+2013-06-04 10:40:53		[charset]
+2013-06-04 10:40:53		  charset
+2013-06-04 10:40:53		[irc]
+2013-06-04 10:40:53		  admin      connect    dehalfop   disconnect invite     kickban    lusers     motd       notice     part       quote      sajoin     saquit     squery     time       userhost   wallchops  whowas    
+2013-06-04 10:40:53		  allchan    ctcp       deop       halfop     ison       kill       map        msg        notify     ping       reconnect  samode     server     squit      topic      users      wallops   
+2013-06-04 10:40:53		  allserv    cycle      devoice    ignore     join       links      me         names      op         pong       rehash     sanick     service    stats      trace      version    who       
+2013-06-04 10:40:53		  ban        dcc        die        info       kick       list       mode       nick       oper       query      restart    sapart     servlist   summon     unban      voice      whois     
+2013-06-04 10:40:53		[aspell]
+2013-06-04 10:40:53		  aspell
+2013-06-04 10:40:53		[python]
+2013-06-04 10:40:53		  python
+2013-06-04 10:40:53		[xfer]
+2013-06-04 10:40:53		  me   xfer
+2013-06-04 10:41:06	=!=	Error with command "connect" (try /help connect)
+2013-06-04 10:41:13		[irc]  /connect  <server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch]
+2013-06-04 10:41:13		                 -all|-open [-nojoin] [-switch]
+2013-06-04 10:41:13		connect to IRC server(s)
+2013-06-04 10:41:13		    server: server name, which can be:
+2013-06-04 10:41:13		            - internal server name (created by /server add, recommended usage)
+2013-06-04 10:41:13		            - hostname/port or IP/port (this will create a TEMPORARY server), port is 6667 by default
+2013-06-04 10:41:13		            - URL with format: irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]
+2013-06-04 10:41:13		    option: set option for server (for boolean option, value can be omitted)
+2013-06-04 10:41:13		  nooption: set boolean option to 'off' (for example: -nossl)
+2013-06-04 10:41:13		      -all: connect to all servers defined in configuration
+2013-06-04 10:41:13		     -open: connect to all opened servers that are not currently connected
+2013-06-04 10:41:13		   -nojoin: do not join any channel (even if autojoin is enabled on server)
+2013-06-04 10:41:13		   -switch: switch to next server address
+2013-06-04 10:41:13		Examples:
+2013-06-04 10:41:13		  /connect freenode
+2013-06-04 10:41:13		  /connect irc.oftc.net/6667
+2013-06-04 10:41:13		  /connect irc6.oftc.net/6667 -ipv6
+2013-06-04 10:41:13		  /connect irc6.oftc.net/6697 -ipv6 -ssl
+2013-06-04 10:41:13		  /connect my.server.org/6697 -ssl -password=test
+2013-06-04 10:41:13		  /connect irc://nick@irc.oftc.net/#channel
+2013-06-04 10:41:13		  /connect -switch
+2013-06-04 14:28:40		fifo: pipe closed
+2013-06-04 14:37:19		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2013-06-04 14:37:29	=!=	Error: unknown command "weeget" (type /help for help)
+2013-06-04 14:37:35	=!=	Error: unknown command "weget" (type /help for help)
+2013-06-04 14:37:39		[core]
+2013-06-04 14:37:39		  away    buffer  command debug   help    input   layout  mute    proxy   reload  save    unset   uptime  wait   
+2013-06-04 14:37:39		  bar     color   cursor  filter  history key     mouse   plugin  quit    repeat  set     upgrade version window 
+2013-06-04 14:37:39		[alias]
+2013-06-04 14:37:39		  AAWAY   AME     ANICK   C       CL      EXIT    J       KB      M       N       REDRAW  SIGNOFF UB      unalias W       WI      WW     
+2013-06-04 14:37:39		  alias   AMSG    BYE     CHAT    CLOSE   IG      K       LEAVE   MUB     Q       SAY     T       UMODE   V       WC      WII    
+2013-06-04 14:37:39		[logger]
+2013-06-04 14:37:39		  logger
+2013-06-04 14:37:39		[rmodifier]
+2013-06-04 14:37:39		  rmodifier
+2013-06-04 14:37:39		[relay]
+2013-06-04 14:37:39		  relay
+2013-06-04 14:37:39		[perl]
+2013-06-04 14:37:39		  perl
+2013-06-04 14:37:39		[tcl]
+2013-06-04 14:37:39		  tcl
+2013-06-04 14:37:39		[ruby]
+2013-06-04 14:37:39		  ruby
+2013-06-04 14:37:39		[lua]
+2013-06-04 14:37:39		  lua
+2013-06-04 14:37:39		[guile]
+2013-06-04 14:37:39		  guile
+2013-06-04 14:37:39		[charset]
+2013-06-04 14:37:39		  charset
+2013-06-04 14:37:39		[irc]
+2013-06-04 14:37:39		  admin      connect    dehalfop   disconnect invite     kickban    lusers     motd       notice     part       quote      sajoin     saquit     squery     time       userhost   wallchops  whowas    
+2013-06-04 14:37:39		  allchan    ctcp       deop       halfop     ison       kill       map        msg        notify     ping       reconnect  samode     server     squit      topic      users      wallops   
+2013-06-04 14:37:39		  allserv    cycle      devoice    ignore     join       links      me         names      op         pong       rehash     sanick     service    stats      trace      version    who       
+2013-06-04 14:37:39		  ban        dcc        die        info       kick       list       mode       nick       oper       query      restart    sapart     servlist   summon     unban      voice      whois     
+2013-06-04 14:37:39		[aspell]
+2013-06-04 14:37:39		  aspell
+2013-06-04 14:37:39		[python]
+2013-06-04 14:37:39		  python
+2013-06-04 14:37:39		[xfer]
+2013-06-04 14:37:39		  me   xfer
+2013-06-04 14:49:20		fifo: pipe closed
+2013-06-04 14:49:23		python scripts loaded: colorize_nicks
+2013-06-04 14:49:23		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2013-06-04 14:51:37		python: scripts unloaded
+2013-06-04 14:51:37		fifo: pipe closed
+2013-06-04 14:51:39		python scripts loaded: autoconnect, colorize_nicks
+2013-06-04 14:51:39		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2013-06-04 14:51:50	=!=	irc: command "join" must be executed on connected irc server
+2013-06-04 14:51:58		Options saved to irc.conf
+2013-06-04 14:52:14		python: scripts unloaded
+2013-06-04 14:52:14		fifo: pipe closed
+2013-06-04 14:52:16		python scripts loaded: autoconnect, colorize_nicks
+2013-06-04 14:52:16		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2013-06-04 14:52:32		Options saved to irc.conf
+2013-06-04 15:01:56		python: scripts unloaded
+2013-06-04 15:01:56		fifo: pipe closed
+2013-06-04 15:01:58		New key binding (context "mouse"): @item(buffers):button2* => hsignal:buffers_mouse
+2013-06-04 15:01:58		New key binding (context "mouse"): @item(buffers):button1* => hsignal:buffers_mouse
+2013-06-04 15:01:58		perl scripts loaded: buffers
+2013-06-04 15:01:58		python scripts loaded: autoconnect, colorize_nicks
+2013-06-04 15:01:58		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2013-06-04 15:02:11		Options saved to irc.conf
+2013-06-04 15:05:22		python: scripts unloaded
+2013-06-04 15:05:22		fifo: pipe closed
+2013-06-04 15:05:22		perl: scripts unloaded

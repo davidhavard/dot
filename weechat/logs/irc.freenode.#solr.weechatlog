@@ -1,0 +1,130 @@
+2013-06-04 10:45:35	-->	vividearth (~david@80.89.93.158) has joined #solr
+2013-06-04 10:45:35	--	Topic for #solr is "Solr 4.3 is available: http://s.apache.org/e2H | Apache Solr: http://lucene.apache.org/solr/ | FAQ: http://wiki.apache.org/solr/FAQ | Docs: http://wiki.apache.org/solr/"
+2013-06-04 10:45:35	--	Topic set by sarowe (~sarowe@68-233-218-146.static-ip.telepacific.net) on Wed, 08 May 2013 20:23:56
+2013-06-04 10:45:35	--	Nicks #solr: [@ChanServ @elyograg @sarowe @steffkes_ [Neurotic] __NiC a1eksey AaronD amontalenti aslan963 asolomon bandtrace bietiekay BiGBOi_ bob_f brianwong burn campfire cedrichurst chichou chriswk coldboot_work crashev crodas cwebber CybDev D0han davbo devdazed diegobz diegolo e-anima fcoury fcoury__ fuu^ Fuu`` gbowyer hjst_ hourback Hypnoz ipostelnik ishan j0rd jamiejackson_ jdolan jeromatron jsacksic_ kellabyte kimuras Layke longdays lsmith lstrojny marthinal matslin matt_c mire_ mkc mspo nerdcore nhhagen NightBird Nodex nuth Obeliks Owkkuri pcmaniac penyaskito ph8 phr3ak PiGo pounard pranny psino rBEL_ rboulton realityloopAFK Rhomber robcaSSon1 rodgort ron rub saily scottmizo Sebastien-L skopii sterna StryKaizer superwese TakumoKatekari tPl0ch TrafeX trashy_ Treggats urkle victor__1 vividearth ward_ woremacx_ xav xilosh yshh]
+2013-06-04 10:45:35	--	Channel #solr: 102 nicks (4 ops, 0 halfops, 0 voices, 98 normals)
+2013-06-04 10:45:37	--	Mode #solr [+cnt]
+2013-06-04 10:45:37	--	Channel created on Sat, 09 Aug 2008 17:38:04
+2013-06-04 10:48:18	vividearth	hi. I am running a dataimport and have tested the queries. Two are run resturing 3532 and 2380 rows. My sql log says only these two are executed by dih however dih says it fetched 26936 rows - why the massive difference?
+2013-06-04 10:51:03	-->	jsacksick (~jsacksick@92.103.57.251) has joined #solr
+2013-06-04 10:51:04	<--	lsmith (~lsmith@77-58-2-206.dclient.hispeed.ch) has quit (Quit: Create or die)
+2013-06-04 10:51:25	<--	jsacksic_ (~jsacksick@92.103.57.251) has quit (Ping timeout: 245 seconds)
+2013-06-04 10:59:59	<--	jsacksick (~jsacksick@92.103.57.251) has quit (Read error: Connection reset by peer)
+2013-06-04 11:00:30	-->	jsacksick (~jsacksick@92.103.57.251) has joined #solr
+2013-06-04 11:07:21	-->	neorey (~neorey@83.232.96.217) has joined #solr
+2013-06-04 11:09:30	-->	jsacksic_ (~jsacksick@92.103.57.251) has joined #solr
+2013-06-04 11:11:00	<--	jsacksick (~jsacksick@92.103.57.251) has quit (Ping timeout: 245 seconds)
+2013-06-04 11:14:22	-->	Infin1ty (~Infin1ty@pdpc/supporter/active/infin1ty) has joined #solr
+2013-06-04 11:15:54	Infin1ty	in solrcloud, when running a query over lets say about 10 shards, and i want to get top 2000, will it query each shard seperately (get the top 2000 per shard), send it to the query initiator (2000*10), then will aggregate it to return top 2000?
+2013-06-04 11:21:57	<--	yshh (~yshh@122x221x184x68.ap122.ftth.ucom.ne.jp) has quit (Remote host closed the connection)
+2013-06-04 11:23:53	@steffkes_	Infin1ty: how should it work otherwise?
+2013-06-04 11:25:14	<--	neorey (~neorey@83.232.96.217) has quit (Quit: Computer has gone to sleep.)
+2013-06-04 11:35:59	<--	fuu^ (~Adium@host0213.codenomicon.com) has quit (Quit: Leaving.)
+2013-06-04 11:36:18	-->	fuu^ (~Adium@host0213.codenomicon.com) has joined #solr
+2013-06-04 11:38:43	<--	matslin (~mats@push.lindh.no) has quit (Ping timeout: 264 seconds)
+2013-06-04 11:39:58	-->	nanotechnoloG (~nanotechn@38.104.188.78) has joined #solr
+2013-06-04 11:43:49	nhhagen	is there anyway to force/convert all content to utf-8?
+2013-06-04 11:44:42	nhhagen	do I need to use an UpdateRequestProcessorFactory? If so does a encoding changer allready exist?
+2013-06-04 11:44:52	-->	matslin (~mats@89.163.163.122) has joined #solr
+2013-06-04 11:47:55	<--	jsacksic_ (~jsacksick@92.103.57.251) has quit (Quit: Computer has gone to sleep.)
+2013-06-04 11:48:08	-->	neorey (~neorey@83.232.96.217) has joined #solr
+2013-06-04 11:51:45	<--	nanotechnoloG (~nanotechn@38.104.188.78) has quit (Remote host closed the connection)
+2013-06-04 11:52:15	<--	matslin (~mats@89.163.163.122) has quit (Ping timeout: 245 seconds)
+2013-06-04 12:03:11	-->	radiochatr (~radiochat@it009225.klientdrift.uib.no) has joined #solr
+2013-06-04 12:04:33	-->	nanotechnoloG (~nanotechn@38.104.188.78) has joined #solr
+2013-06-04 12:05:20	radiochatr	why do I get ../dataimport//dataimport with double-slashes in "Solr Admin" when having registered
+2013-06-04 12:05:34	radiochatr	<requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler"> </requestHandler>
+2013-06-04 12:06:23	-->	lsmith (~lsmith@77-58-2-206.dclient.hispeed.ch) has joined #solr
+2013-06-04 12:12:35	<--	cwebber (~cwebber@pool-96-251-131-102.lsanca.fios.verizon.net) has quit (Quit: cwebber)
+2013-06-04 12:13:26	<--	fuu^ (~Adium@host0213.codenomicon.com) has quit (Quit: Leaving.)
+2013-06-04 12:14:43	<--	nanotechnoloG (~nanotechn@38.104.188.78) has quit (Ping timeout: 264 seconds)
+2013-06-04 12:16:13	-->	fuu^ (~Adium@host0213.codenomicon.com) has joined #solr
+2013-06-04 12:16:41	-->	matslin (~mats@push.lindh.no) has joined #solr
+2013-06-04 12:24:10	-->	montano334455 (52d44c2e@gateway/web/freenode/ip.82.212.76.46) has joined #solr
+2013-06-04 12:31:02	--	steffkes_ is now known as steffkes
+2013-06-04 12:33:30	radiochatr	where is everyone?
+2013-06-04 12:35:17	<--	matslin (~mats@push.lindh.no) has quit (Ping timeout: 256 seconds)
+2013-06-04 12:37:37	@steffkes	radiochatr: i'm into a call right now, but i'll answer your question soon :)
+2013-06-04 12:37:50	radiochatr	ok, no problem! :-)
+2013-06-04 12:39:32	<--	montano334455 (52d44c2e@gateway/web/freenode/ip.82.212.76.46) has quit (Quit: Page closed)
+2013-06-04 12:41:27	-->	matslin (~mats@push.lindh.no) has joined #solr
+2013-06-04 12:42:30	@steffkes	so. radiochatr: the reason is dead simple. the basic structure would be /dataimport/$name .. and since name itself contains a slash - the urls ends up containing two of them. and we can't skip the second one, since you're able to specific request handlers w/o a leading slash in solr
+2013-06-04 12:43:01	radiochatr	…you aren't… ?
+2013-06-04 12:43:06	radiochatr	specify
+2013-06-04 12:46:34	<--	crashev (crashev@tara.nabino.pl) has quit (Read error: Operation timed out)
+2013-06-04 12:48:44	@steffkes	were did i say "you aren't" ?
+2013-06-04 12:48:56	@steffkes	what is unclear about the things i said?
+2013-06-04 12:49:28	-->	diegolo_ (~diegolo@syrah.isti.cnr.it) has joined #solr
+2013-06-04 12:49:48	Infin1ty	steffkes, i see no other way, i was just asking ;)
+2013-06-04 12:49:55	-->	crashev (crashev@tara.nabino.pl) has joined #solr
+2013-06-04 12:50:19	Infin1ty	steffkes, i assume it's suggested to have a fast network between the nodes themselfs, i.e:  10GB network will be more efficient
+2013-06-04 12:50:54	Infin1ty	and i will also need a very strong "controller", does solr support having nodes without any data? just for those queries?
+2013-06-04 12:50:59	Infin1ty	like elasticsearch has
+2013-06-04 12:53:39	@steffkes	Infin1ty: fast network is always good ;) i can imagine for that kind of operation, the hardware might make a difference. i mean, combining 2k*10 results into 2k .. just is a bit of work (:
+2013-06-04 12:54:04	@steffkes	Infin1ty: afaik not in solr .. they all hold data .. but you'd have to check the Docs on SolrCloud to be sure
+2013-06-04 12:55:44	-->	clintnewsom (~clintnews@cpe-67-244-80-144.nyc.res.rr.com) has joined #solr
+2013-06-04 12:55:51	Nodex	clown feeeeeet
+2013-06-04 12:57:11	@steffkes	woot?
+2013-06-04 12:57:41	<--	clintnewsom (~clintnews@cpe-67-244-80-144.nyc.res.rr.com) has quit (Client Quit)
+2013-06-04 13:04:31	Nodex	:D
+2013-06-04 13:07:12	-->	Martin_ (8d2c0de3@gateway/web/freenode/ip.141.44.13.227) has joined #solr
+2013-06-04 13:09:20	<--	nhhagen (~nhhagen@195.159.43.226) has quit (Ping timeout: 276 seconds)
+2013-06-04 13:09:48	-->	nhhagen (~nhhagen@195.159.43.226) has joined #solr
+2013-06-04 13:13:57	@steffkes	is this the revenge for loosing your +v Nodex? :p
+2013-06-04 13:16:29	<--	neorey (~neorey@83.232.96.217) has quit (Quit: Computer has gone to sleep.)
+2013-06-04 13:25:06	-->	erikhatcher (~anonymous@client-216-30-180-29.dynamic.getopenspace.com) has joined #solr
+2013-06-04 13:25:07	--	Mode #solr [+o erikhatcher] by ChanServ
+2013-06-04 13:30:48	-->	jsacksick (~jsacksick@92.103.57.251) has joined #solr
+2013-06-04 13:36:43	@steffkes	radiochatr?
+2013-06-04 13:37:20	radiochatr	hi, had to go and fix some mysql stuff
+2013-06-04 13:37:27	radiochatr	"since you're able to specific request handlers w/o a leading slash in solr"
+2013-06-04 13:37:33	radiochatr	able to specify?
+2013-06-04 13:37:45	radiochatr	so I can also write
+2013-06-04 13:38:10	radiochatr	<requestHandler name="dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">…</requestHandler>
+2013-06-04 13:38:12	radiochatr	?
+2013-06-04 13:39:06	Layke	elyograg, / steffkes Got the response I needed to hear from David :)
+2013-06-04 13:39:07	Layke	http://lucene.472066.n3.nabble.com/SpatialRecursivePrefixTreeFieldType-Spatial-Searching-td4067778.html
+2013-06-04 13:40:30	<--	pranny (~Adium@61.12.27.114) has quit (Quit: Leaving.)
+2013-06-04 13:41:10	rub	Hi, Q: How does 4.3.0 handle simultanious commits?
+2013-06-04 13:41:49	@steffkes	Layke: saw that already :) happy to hear to that change improves the response times
+2013-06-04 13:41:57	@steffkes	Layke: or did you already try that?
+2013-06-04 13:47:34	<--	davbo (~davbo@oucs-davidk.oucs.ox.ac.uk) has quit (Remote host closed the connection)
+2013-06-04 13:49:58	-->	keramet (b2fb2d0f@gateway/web/freenode/ip.178.251.45.15) has joined #solr
+2013-06-04 13:51:20	-->	davbo (~davbo@oucs-davidk.oucs.ox.ac.uk) has joined #solr
+2013-06-04 13:51:53	<--	keramet (b2fb2d0f@gateway/web/freenode/ip.178.251.45.15) has quit (Client Quit)
+2013-06-04 13:52:28	-->	cagdas (~cagdas@178.251.45.15) has joined #solr
+2013-06-04 13:53:01	--	cagdas is now known as keramet
+2013-06-04 13:55:51	<--	steffkes (~steffkes@adsl-178-39-133-222.adslplus.ch) has quit (Remote host closed the connection)
+2013-06-04 14:01:59	-->	yonik (~somebody@c-98-221-155-128.hsd1.nj.comcast.net) has joined #solr
+2013-06-04 14:01:59	--	Mode #solr [+o yonik] by ChanServ
+2013-06-04 14:04:16	-->	neorey (~neorey@83.232.96.217) has joined #solr
+2013-06-04 14:07:08	-->	rob__ (~rob@204.154.43.244) has joined #solr
+2013-06-04 14:07:11	<--	nhhagen (~nhhagen@195.159.43.226) has quit (Ping timeout: 276 seconds)
+2013-06-04 14:10:43	-->	jdguzman (~jdguzman@24.54.120.124) has joined #solr
+2013-06-04 14:12:02	-->	nhhagen (~nhhagen@195.159.43.226) has joined #solr
+2013-06-04 14:13:19	-->	mmitchell (~mmitchell@c-24-125-146-100.hsd1.va.comcast.net) has joined #solr
+2013-06-04 14:16:25	<--	mire_ (~mire@147-172-222-85.adsl.verat.net) has quit (Ping timeout: 256 seconds)
+2013-06-04 14:17:26	<--	jdolan (~jdolan@c-76-101-126-141.hsd1.fl.comcast.net) has quit (Remote host closed the connection)
+2013-06-04 14:19:31	-->	wenzhixue (~wenzhixue@165.254.85.1) has joined #solr
+2013-06-04 14:24:00	-->	bodisiw (nmad222@pot951-3.ad.uky.edu) has joined #solr
+2013-06-04 14:24:43	-->	jdolan (~jdolan@c-76-101-126-141.hsd1.fl.comcast.net) has joined #solr
+2013-06-04 14:25:26	<--	fuu^ (~Adium@host0213.codenomicon.com) has quit (Quit: Leaving.)
+2013-06-04 14:28:36	vividearth	quit
+2013-06-04 14:28:40		irc: disconnected from server
+2013-06-04 14:45:53	-->	vividearth (~david@80.89.93.158) has joined #solr
+2013-06-04 14:45:53	--	Topic for #solr is "Solr 4.3 is available: http://s.apache.org/e2H | Apache Solr: http://lucene.apache.org/solr/ | FAQ: http://wiki.apache.org/solr/FAQ | Docs: http://wiki.apache.org/solr/"
+2013-06-04 14:45:53	--	Topic set by sarowe (~sarowe@68-233-218-146.static-ip.telepacific.net) on Wed, 08 May 2013 20:23:56
+2013-06-04 14:45:53	--	Nicks #solr: [@ChanServ @elyograg @erikhatcher @sarowe @yonik [Neurotic] __NiC a1eksey AaronD amontalenti aslan963 asolomon bandtrace bietiekay BiGBOi_ bob_f bodisiw brianwong burn campfire cedrichurst chichou chriswk coldboot_work coldboot|laptop crashev crodas cwebber CybDev D0han davbo devdazed diegobz diegolo diegolo_ e-anima fcoury fcoury__ Fuu`` gbowyer hjst_ hourback Hypnoz Infin1ty ipostelnik ishan j0rd jamiejackson_ jdguzman jdolan jeromatron jsacksick kellabyte keramet kimuras Layke lsmith lstrojny marthinal Martin_ matslin matt_c mkc mmitchell mspo neorey nerdcore nhhagen NightBird Nodex nuth Obeliks Owkkuri pcmaniac penyaskito ph8 phr3ak PiGo pounard pranny psino radiochatr rBEL_ rboulton realityloopAFK Rhomber rob__ robcaSSon1 rodgort ron rub saily scottmizo Sebastien-L skopii sterna StryKaizer superwese TakumoKatekari tPl0ch TrafeX trashy_ Treggats urkle victor__1 vividearth ward_ wenzhixue woremacx_ xav xilosh]
+2013-06-04 14:45:53	--	Channel #solr: 111 nicks (5 ops, 0 halfops, 0 voices, 106 normals)
+2013-06-04 14:45:54	--	Mode #solr [+cnt]
+2013-06-04 14:45:54	--	Channel created on Sat, 09 Aug 2008 17:38:04
+2013-06-04 14:49:20		irc: disconnected from server
+2013-06-04 14:49:52	-->	david1 (~david@80.89.93.158) has joined #solr
+2013-06-04 14:49:52	--	Topic for #solr is "Solr 4.3 is available: http://s.apache.org/e2H | Apache Solr: http://lucene.apache.org/solr/ | FAQ: http://wiki.apache.org/solr/FAQ | Docs: http://wiki.apache.org/solr/"
+2013-06-04 14:49:52	--	Topic set by sarowe (~sarowe@68-233-218-146.static-ip.telepacific.net) on Wed, 08 May 2013 20:23:56
+2013-06-04 14:49:52	--	Nicks #solr: [@ChanServ @elyograg @erikhatcher @sarowe @yonik [Neurotic] __NiC a1eksey AaronD amontalenti aslan963 asolomon bandtrace bietiekay BiGBOi_ bob_f bodisiw brianwong burn campfire cedrichurst chichou chriswk coldboot_work coldboot|laptop crashev crodas cwebber CybDev D0han davbo david1 devdazed diegobz diegolo diegolo_ e-anima fcoury fcoury__ Fuu`` gbowyer hjst_ hourback Hypnoz Infin1ty ipostelnik ishan j0rd jamiejackson_ jdguzman jdolan jeromatron jsacksick kellabyte keramet kimuras Layke lsmith lstrojny marthinal Martin_ matslin matt_c mkc mmitchell mspo neorey nerdcore nhhagen NightBird Nodex nuth Obeliks Owkkuri pcmaniac penyaskito ph8 phr3ak PiGo pounard pranny psino radiochatr rBEL_ rboulton realityloopAFK Rhomber rob__ robcaSSon1 rodgort ron rub saily scottmizo Sebastien-L skopii sterna StryKaizer superwese TakumoKatekari tPl0ch TrafeX trashy_ Treggats urkle victor__1 ward_ wenzhixue woremacx_ xav xilosh]
+2013-06-04 14:49:52	--	Channel #solr: 111 nicks (5 ops, 0 halfops, 0 voices, 106 normals)
+2013-06-04 14:49:54	--	Mode #solr [+cnt]
+2013-06-04 14:49:54	--	Channel created on Sat, 09 Aug 2008 17:38:04
+2013-06-04 14:50:19	<--	david1 (~david@80.89.93.158) has left #solr
+2013-06-04 14:51:37		irc: disconnected from server
