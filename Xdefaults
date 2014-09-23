@@ -1,4 +1,3 @@
-
 !-------------------------------------------------------------------------------
 ! Xft settings
 !-------------------------------------------------------------------------------
@@ -22,8 +21,8 @@ URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           true
-! URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-* 
-! URxvt*boldFont: -*-terminus bold-*-*-*-*-12-*-*-*-*-*-*-*
+! URxvt*font: -*-terminus-*-*-*-*-14-*-*-*-*-*-*-* 
+! URxvt*boldFont: -*-terminus bold-*-*-*-*-14-*-*-*-*-*-*-*
 
 ! Fix font space
 ! URxvt*letterSpace: -1 
