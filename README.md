@@ -7,6 +7,7 @@ Instructions
 ============
 ```
 ln -s 
+# for each line (expand the second one!)
 fonts.conf -> ~/.config/fontconfig/fonts.conf
 * -> ~/.*
 ```
