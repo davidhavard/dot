@@ -9,7 +9,6 @@ Instructions
 ln -s fonts.conf -> ~/.config/fontconfig/fonts.conf
 ln -s Xdefaults -> ~/.Xdefaults
 ln -s xinitrc -> ~/.xinitrc
-
 ```
 
 Additional Fonts
