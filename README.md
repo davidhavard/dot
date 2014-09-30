@@ -5,8 +5,7 @@ Dotfiles and configs for my arch setup
 
 Instructions
 ============
-`ln -s
-fonts.conf -> ~/.config/fontconfig/fonts.conf
+`ln -s fonts.conf -> ~/.config/fontconfig/fonts.conf
 `* -> ~/.*
 
 Additional Fonts
