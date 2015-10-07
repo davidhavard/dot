@@ -3,7 +3,7 @@
 !-------------------------------------------------------------------------------
 
 Xft.dpi: 96
-Xft.antialias: false
+!Xft.antialias: false
 Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintslight
@@ -23,7 +23,7 @@ URxvt.scrollStyle: rxvt
 URxvt.scrollBar: false
 
 ! Font
-URxvt.font: xft:Anonymous Pro:size=10
+URxvt.font: xft:Anonymous Pro:size=12
 
 ! Clickable URLs:
 URxvt.perl-ext-common: default,matcher
