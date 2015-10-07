@@ -2,23 +2,33 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-Xft.dpi:                    96
-Xft.antialias:              false
-Xft.rgba:                   rgb
-Xft.hinting:                true
-Xft.hintstyle:              hintslight
+Xft.dpi: 96
+Xft.antialias: false
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
 
 ! Xcursor Size
-Xcursor.size:  14
+Xcursor.size: 14
+
+! URxvt
+URxvt*termName:rxvt-unicode-256color
+URxvt.allow_bold: true
+URxvt.saveLines: 1000
+URxvt.internalBorder: 8
+URxvt.externalBorder: 0
 
 ! Scrollbar
-URxvt.scrollStyle:          rxvt
-URxvt.scrollBar:            false
+URxvt.scrollStyle: rxvt
+URxvt.scrollBar: false
+
+! Font
+URxvt.font: xft:Anonymous Pro:size=10
 
 ! Clickable URLs:
-URxvt.perl-ext-common:  default,matcher
-URxvt.url-launcher:      /usr/bin/chromium
-URxvt.matcher.button:   1
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: chromium
+URxvt.matcher.button: 1
 
 #define base00 #000000
 #define base01 #37B349
