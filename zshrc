@@ -93,8 +93,3 @@ source ~/.rvm/scripts/rvm
 #
 export AWS_ACCESS_KEY_ID="AKIAIBZG4TD3YHFADYCQ"
 export AWS_SECRET_ACCESS_KEY="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"
-
-# Colorscheme
-#BASE16_SHELL="$HOME/.config/base16-shell/base16-pop.dark.sh"
-#[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-xrdb "$HOME/.Xresources"
