@@ -20,7 +20,8 @@ setxkbmap gb
 xrdb "$HOME/.Xresources"
 
 # Multi monitor support:
-~/.screenlayout/work.sh
+#
+~/.screenlayout/screen.sh
 
 # Set default browser:
 export BROWSER=chromium
